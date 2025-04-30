@@ -10,18 +10,15 @@ const route = useRoute();
             <h1 class="title">Security module exercises</h1>
         </header>
         <div class="nav">
-            <button :class="{ active: route.name === 'exercise1' }"
+            <button :class="{ active: route.name === 'exercise1' || route.name === 'exercise1-fix' }"
                 @click="() => router.push({ name: 'exercise1' })">Exercise
                 1</button>
-            <button :class="{ active: route.name === 'exercise2' }"
-                @click="() => router.push({ name: 'exercise2' })">Exercise
+            <button :class="{ active: route.name === 'exercise2' || route.name === 'exercise2-fix' }"
+                @click="() => router.push({ name: 'exercise2', query: { q: 'some query' } })">Exercise
                 2</button>
-            <button :class="{ active: route.name === 'exercise3' }"
-                @click="() => router.push({ name: 'exercise3' })">Exercise
+            <button :class="{ active: route.name === 'exercise3' || route.name === 'exercise3-fix' }"
+                @click="() => router.push({ name: 'exercise3', params: { name: 'anneleen' } })">Exercise
                 3</button>
-            <button :class="{ active: route.name === 'exercise4' }"
-                @click="() => router.push({ name: 'exercise4' })">Exercise
-                4</button>
         </div>
         <main>
             <RouterView />

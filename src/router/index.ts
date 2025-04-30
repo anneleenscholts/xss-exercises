@@ -29,14 +29,14 @@ export const router = createRouter({
           name: "exercise2-fix",
         },
         {
-          path: "/exercise3",
+          path: "/exercise3/:name?",
           component: () => import("@/views/Exercise3.vue"),
           name: "exercise3",
         },
         {
-          path: "/exercise4",
-          component: () => import("@/views/Exercise4.vue"),
-          name: "exercise4",
+          path: "/exercise3/solution/:name",
+          component: () => import("@/views/Exercise3_fix.vue"),
+          name: "exercise3-fix",
         },
       ],
     },

@@ -23,6 +23,20 @@ const addComment = () => {
 </script>
 
 <template>
+    <div class="exercise">
+        <h2>Exercise 1</h2>
+        <div>
+            <p>In deze oefening gaat het over XSS rechtstreeks via een inputveld. Kijk in de code eens naar
+                <b>Exercise1.vue</b>. Wat denk je dat het probleem is?
+            </p>
+            <h3 class="subheader">Probeer zelf eens misbruik te maken van de vulnerabiliteit.</h3>
+            <p>Als je een hint wil kan je op "Toggle Hint" klikken en dan krijg je een hint te zien.</p>
+
+            <h3 class="subheader">Probeer zelf eens de vulnerabiliteit te fixen</h3>
+            <p>Je kan via de "Go to solution" knop navigeren naar een component die er hetzelfde uitziet maar waar de
+                vulnerabiliteit niet bestaat. Wat is er anders in de code?</p>
+        </div>
+    </div>
     <div class="comment-section">
         <div class="comment-block">
             <h3>Add Comment</h3>
@@ -47,13 +61,9 @@ const addComment = () => {
     </div>
 </template>
 
-<!-- Attack Vector: -->
-<!-- <img src="x" onerror="alert('XSS Attack!')"> -->
-<!-- <div onmouseover="alert('XSS Attack!')">Hover over me</div> -->
-<!-- <a href="javascript:alert('XSS Attack!')">Click Me</a>-->
-
 <style scoped>
 .comment-section {
+    min-width: 75vw;
     display: flex;
     flex-direction: row;
     gap: 2em;
@@ -65,28 +75,6 @@ const addComment = () => {
     width: 50%;
 }
 
-textarea {
-    width: 100%;
-    height: 100px;
-    padding: 0.5rem;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-}
-
-button {
-    padding: 0.5rem 1rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    max-width: fit-content;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
 .comment {
     padding: 0.5rem;
 }
@@ -96,12 +84,5 @@ button:hover {
     padding: 1rem;
     border-radius: 4px;
     margin-top: 1rem;
-}
-
-.solution-section {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 2rem;
 }
 </style>

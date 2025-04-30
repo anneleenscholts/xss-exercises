@@ -20,6 +20,20 @@ onMounted(() => {
 </script>
 
 <template>
+    <div class="exercise">
+        <h2>Exercise 2</h2>
+        <div>
+            <p>In deze oefening gaat het over XSS via URL parameters. Kijk in de code eens naar
+                <b>Exercise2.vue</b>. Wat denk je dat het probleem is?
+            </p>
+            <h3 class="subheader">Probeer zelf eens misbruik te maken van de vulnerabiliteit.</h3>
+            <p>Als je een hint wil kan je op "Toggle Hint" klikken en dan krijg je een hint te zien.</p>
+
+            <h3 class="subheader">Probeer zelf eens de vulnerabiliteit te fixen</h3>
+            <p>Je kan via de "Go to solution" knop navigeren naar een component die er hetzelfde uitziet maar waar de
+                vulnerabiliteit niet bestaat. Wat is er anders in de code?</p>
+        </div>
+    </div>
     <div class="search-results">
         <h2>Search Results</h2>
         <!-- Vulnerable: Directly reflecting URL parameters as HTML -->
@@ -40,55 +54,11 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.comment-section {
-    display: flex;
-    flex-direction: row;
-    gap: 2em;
-    min-width: 75vw;
-    margin: 2rem 0;
-}
-
-.comment-block {
-    width: 50%;
-}
-
-textarea {
-    width: 100%;
-    height: 100px;
-    padding: 0.5rem;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-}
-
-button {
-    padding: 0.5rem 1rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    max-width: fit-content;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-.comment {
-    padding: 0.5rem;
-}
-
-.codeblock {
-    background-color: #f8f9fa;
-    padding: 1rem;
-    border-radius: 4px;
-    margin-top: 1rem;
-}
-
-.solution-section {
+.search-results {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    margin-top: 2rem;
+    gap: 1em;
+    min-width: 75vw;
+    margin: 2rem 0;
 }
 </style>
