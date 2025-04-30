@@ -1,33 +1,24 @@
 # xss-exercises
+Je kan deze applicatie starten door:
+`npm install`
 
-This template should help get you started developing with Vue 3 in Vite.
+te runnen en vervolgens 
 
-## Recommended IDE Setup
+`npm run dev`.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+# Oefeningen
+Er zijn 3 oefeningen die 3 verschillende manieren aantonen waarop XSS injectie zou kunnen gebeuren.
 
-## Type Support for `.vue` Imports in TS
+De bedoeling van elke oefening is gelijkaardig:
+- Kijken hoe de component origineel opgebouwd is
+- Zelf proberen om misbruik te maken van hoe het opgebouwd is met een (onschuldige) XSS aanval
+- De vulnerability zelf proberen elimineren en kijken of de XSS aanval nog steeds werkt
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+Voor elke oefening zijn er enkele hints voorzien die je zelf kan uitproberen. Ook is er steeds een link naar een eventuele oplossing.
 
-## Customize configuration
+Probeer zeker zelf voor je naar de oplossingen of de hints kijkt, daar zit hem net de fun. :-)
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+# Zelfevaluatie groepswerk
+Enkele van deze mechanismes worden ook gebruikt in jullie groepswerk. Denken jullie dat je voldoende maatregelen neemt om dit te op te vangen?
 
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
+Zijn er nog andere security problemen die je eventueel ziet? Dit hoeft zich niet per se tot de frontend te beperken, probeer kritisch na te denken over de hele oplossing inclusief de backend.
