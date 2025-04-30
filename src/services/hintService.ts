@@ -7,7 +7,7 @@ const useHint = () => {
 
   const hints2 = [`?q=<img src="x" onerror="alert('XSS')">`];
 
-  const hints3 = [`Bob<img%20src%3D"x"%20onerror%3D"alert('XSS')">`];
+  const hints3 = [`Blob<img%20src%3D"x"%20onerror%3D"alert('XSS')">`];
   return { hints1, hints2, hints3 };
 };
 
